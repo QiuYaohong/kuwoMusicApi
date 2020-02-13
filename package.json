@@ -1,0 +1,21 @@
+{
+  "name": "kuwomusicapi",
+  "version": "1.0.0",
+  "description": "酷我音乐API Node.js版",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "酷我音乐API Node.JS版",
+    "音乐API"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apicache": "^1.5.3",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "request": "^2.88.0"
+  }
+}
