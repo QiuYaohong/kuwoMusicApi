@@ -136,6 +136,55 @@
 | rn   | 分頁     |          | 默認1 |
 | pn   | 每頁數量 |          | 默認5 |
 
+```json
+list: [
+0: {img: "http://img1.kwcdn.kuwo.cn/star/userpl2015/10/13/1582042149394_132026710_150.jpg", uname: "",…}
+img: "http://img1.kwcdn.kuwo.cn/star/userpl2015/10/13/1582042149394_132026710_150.jpg"
+uname: ""
+img700: "http://img1.kwcdn.kuwo.cn/star/userpl2015/10/13/1582042149394_132026710_700.jpg"
+img300: "http://img1.kwcdn.kuwo.cn/star/userpl2015/10/13/1582042149394_132026710b.jpg"
+userName: ""
+img500: "http://img1.kwcdn.kuwo.cn/star/userpl2015/10/13/1582042149394_132026710_500.jpg"
+total: 548
+name: "每日最新单曲推荐"
+listencnt: 197482809
+id: 1082685104
+tag: ""
+musicList: []
+desc: ""
+info: "该专辑先后邀请孟文豪、董楠、良朋、崔恕、赵佳霖等国内知名音乐人，分别围绕致敬生命、致敬逆行者、致敬祖国等角度进行创作，并将邀请韩磊、佟丽娅等国内著名歌手及青年演员倾情演唱"
+1: {img: "http://img1.kwcdn.kuwo.cn/star/userpl2015/15/53/1482267851912_54513215_500.jpg", uname: "熙姊。",…}
+img: "http://img1.kwcdn.kuwo.cn/star/userpl2015/15/53/1482267851912_54513215_500.jpg"
+uname: "熙姊。"
+img700: "http://img1.kwcdn.kuwo.cn/star/userpl2015/15/53/1482267851912_54513215_700.jpg"
+img300: "http://img1.kwcdn.kuwo.cn/star/userpl2015/15/53/1482267851912_54513215b.jpg"
+userName: "熙姊。"
+img500: "http://img1.kwcdn.kuwo.cn/star/userpl2015/15/53/1482267851912_54513215_500.jpg"
+total: 51
+name: "＜周杰伦＞饶舌Rap快歌最全合集"
+listencnt: 636642
+id: 2073771443
+musicList: []
+desc: ""
+info: "觉得自己舌头不错的勇士，快来挑战吧！"
+}
+,…]
+```
+
+
+
+#### - 歌单音乐
+
+接口:/musicList
+
+示例:`/musicList?pid=1082685104`
+
+| 参数 | 说明     | 是否必须 | 示例          |
+| ---- | -------- | -------- | ------------- |
+| pid  | 歌单id   | 是       | id=1082685104 |
+| rn   | 分页     |          | 默认1         |
+| pn   | 每页数量 |          | 默认30        |
+
 
 
 #### - 默认歌单
