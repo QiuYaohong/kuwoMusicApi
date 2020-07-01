@@ -9,7 +9,7 @@ app.use((req, res, next) => {
     if (req.path !== '/' && !req.path.includes('.')) {
         res.set({
             'Access-Control-Allow-Credentials': true,
-            'Access-Control-Allow-Origin': req.headers.origin || '*',
+            'Access-Control-Allow-Origin': '*',
             'Access-Control-Allow-Headers': 'X-Requested-With,Content-Type',
             'Access-Control-Allow-Methods': 'PUT,POST,GET,DELETE,OPTIONS',
             'Content-Type': 'application/json; charset=utf-8'
@@ -32,10 +32,15 @@ app.use(cache('2 minutes', ((req, res) => res.statusCode === 200)))
 
 
 fs.readdirSync(path.join(__dirname, 'router')).reverse().forEach(file => {
+	 if(!file.endsWith('.js')) return
     const filename = file.replace(/\.js$/, '');
+	
     app.use(`/${filename}`, (req, res, next) => {
+		
         const callback = require(`./router/${filename}`);
         callback(req, res, next);
+		 console.log('[OK]', decodeURIComponent(req.originalUrl))
+		
     });
 });
 
@@ -45,8 +50,9 @@ app.get('/',(req,res,body)=>{
     res.render('index')
 })
 
+const port = process.env.PORT || 7171
+const host = process.env.HOST || ''
 
-app.listen(3300, 'localhost', () => {
-
-    console.log('running at', 'http://localhost:3300')
+app.listen(port, host, () => {
+  console.log(`server running @ http://${host ? host : 'localhost'}:${port}`)
 })
