@@ -1,55 +1,29 @@
 # 酷我音樂API
+### Development
 
-酷我音樂 Node.js API server
-
-这是一个基于 Express + request 的Node.js 项目 , 一切仅提供学习参考
-
-## 用前須知
-
-+ 该项目仅做接口转发,部分接口通过修改 Referer 实现以及携带cookie的形式伪造(CSRF),所有数据均不做存储处理
-+ 本项目仅供学习使用,请尊重版权,请勿利用此项目从事商业行为
-+ 想用请自行clone走项目启动
-
-## start
-
-```shell
-git clone https://github.com/QiuYaohong/kuwoMusicApi.git
-npm install
-node app.js
+```bash
+$ git clone https://github.com/QiuYaohong/kuwoMusicApi.git
+$ npm i
+$ npm run dev
+$ open http://localhost:7001/
 ```
 
+Don't tsc compile at development mode, if you had run `tsc` then you need to `npm run clean` before `npm run dev`.
 
+### Deploy
 
-## 功能特性
+```bash
+$ npm run tsc
+$ npm start
+```
 
-1. 搜索
-2. 搜索提示
-3. 單曲搜索
-4. 專輯搜索
-5. mv搜索
-6. 歌單搜索
-7. 歌手搜索
-8. 音樂播放地址
-9. 歌詞
-10. 輪播圖
-11. 音樂播放信息
-12. mv播放地址
-13. 歌單推薦
-14. 排行榜
-15. 推薦排行榜
-16. 排行榜分類
-17. 歌手推薦
-18. 主播電臺
-19. 歌手
-20. 歌手分類
-21. 歌手單曲
-22. 歌手mv 
-23. 歌手專輯
-24. 歌單
-25. 歌單分類
-26. 最新歌單
-27. 最熱歌單
-28. 歌曲評論
-29. 歌單評論
-30. 排行榜評論
-31. mv評論
+### Npm Scripts
+
+- Use `npm run lint` to check code style
+- Use `npm test` to run unit test
+- se `npm run clean` to clean compiled js at development mode once
+
+### Requirement
+
+- Node.js 8.x
+- Typescript 2.8+

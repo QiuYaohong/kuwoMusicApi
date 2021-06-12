@@ -1,0 +1,28 @@
+{
+  "extends": "eslint-config-egg/typescript",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+	"rules": {
+		"comma-dangle":["error","always-multiline"],
+		"operator-linebreak":["error","before"],
+		"space-before-function-paren":[
+			"error",
+			{
+				"anonymous":"always",
+				"named":"always",
+				"asyncArrow":"always"
+			}
+		],
+		"no-var-requires":true,
+		"semi": ["error", "always"],
+		"quotes": ["error", "double"]
+	},
+	"globals": {
+		"_":"readonly",
+		"app":true
+	},
+	"env": {
+		"node": true
+	}
+}

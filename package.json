@@ -1,26 +1,62 @@
 {
   "name": "kuwomusicapi",
   "version": "1.0.0",
-  "description": "酷我音乐API Node.js版",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "Egg for 酷我音乐API;酷我音乐API Node.js版",
+  "private": true,
   "keywords": [
     "酷我音乐API Node.JS版",
     "音乐API"
   ],
-  "author": "",
-  "license": "ISC",
+  "egg": {
+    "typescript": true,
+    "declarations": true
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=egg-server-server-egg",
+    "stop": "egg-scripts stop --title=egg-server-server-egg",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "test-local": "egg-bin test",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "cov": "egg-bin cov",
+    "tsc": "ets && tsc -p tsconfig.json",
+    "ci": "npm run lint && npm run cov && npm run tsc",
+    "autod": "autod",
+    "lint": "eslint . --ext .ts",
+    "clean": "ets clean"
+  },
   "dependencies": {
-    "apicache": "^1.5.3",
-    "ejs": "^3.0.1",
-    "express": "^4.17.1",
-    "request": "^2.88.0"
+    "egg": "^2.6.1",
+    "egg-cors": "^2.2.3",
+    "egg-scripts": "^2.6.0"
   },
   "devDependencies": {
-    "babel-eslint": "10.1.0",
-    "eslint": "6.7.2",
-    "eslint-plugin-html": "^6.1.1"
-  }
+    "@types/mocha": "^2.2.40",
+    "@types/node": "^7.0.12",
+    "@types/supertest": "^2.0.0",
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "egg-bin": "^4.11.0",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.16.0",
+    "eslint": "^7.28.0",
+    "eslint-config-egg": "^8.0.0",
+    "tslib": "^1.9.0",
+    "typescript": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "ci": {
+    "version": "8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/QiuYaohong/kuwoMusicApi.git"
+  },
+  "eslintIgnore": [
+    "coverage"
+  ],
+  "author": "qyhqiu",
+  "license": "MIT"
 }
