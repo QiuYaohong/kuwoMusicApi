@@ -2,7 +2,7 @@ const BaseController = require('./BaseController')
 
 export default class Search extends BaseController {
   // 关键字搜索
-  async searchKey() {
+  async searchKey () {
     const { ctx, service } = this
     const { key } = ctx.query
     const res = await service.search.searchKey(key)
@@ -10,7 +10,7 @@ export default class Search extends BaseController {
   }
 
   // 单曲搜索
-  async searchMusicBykeyWord() {
+  async searchMusicBykeyWord () {
     const { ctx, service } = this
     const { key, pn = 1, rn = 30 } = ctx.query
     if (!key) {
@@ -18,7 +18,7 @@ export default class Search extends BaseController {
         code: 500,
         message: '参数错误',
         result: null,
-        success: false
+        success: false,
       }
       return
     }
@@ -27,7 +27,7 @@ export default class Search extends BaseController {
   }
 
   // 专辑搜索
-  async searchAlbumBykeyWord() {
+  async searchAlbumBykeyWord () {
     const { ctx, service } = this
     const { key, pn = 1, rn = 30 } = ctx.query
     if (!key) {
@@ -35,7 +35,7 @@ export default class Search extends BaseController {
         code: 500,
         message: '参数错误',
         result: null,
-        success: false
+        success: false,
       }
       return
     }
@@ -44,7 +44,7 @@ export default class Search extends BaseController {
   }
 
   // mv 搜索
-  async searchMvBykeyWord() {
+  async searchMvBykeyWord () {
     const { ctx, service } = this
     const { key, pn = 1, rn = 30 } = ctx.query
     if (!key) {
@@ -52,7 +52,7 @@ export default class Search extends BaseController {
         code: 500,
         message: '参数错误',
         result: null,
-        success: false
+        success: false,
       }
       return
     }
@@ -61,7 +61,7 @@ export default class Search extends BaseController {
   }
 
   // 歌单搜索
-  async searchPlayListBykeyWord() {
+  async searchPlayListBykeyWord () {
     const { ctx, service } = this
     const { key, pn = 1, rn = 30 } = ctx.query
     if (!key) {
@@ -69,7 +69,7 @@ export default class Search extends BaseController {
         code: 500,
         message: '参数错误',
         result: null,
-        success: false
+        success: false,
       }
       return
     }
@@ -78,7 +78,7 @@ export default class Search extends BaseController {
   }
 
   // 歌手搜索
-  async searchArtistBykeyWord() {
+  async searchArtistBykeyWord () {
     const { ctx, service } = this
     const { key, pn = 1, rn = 30 } = ctx.query
     if (!key) {
@@ -86,12 +86,11 @@ export default class Search extends BaseController {
         code: 500,
         message: '参数错误',
         result: null,
-        success: false
+        success: false,
       }
       return
     }
     const res = await service.search.searchArtistBykeyWord({ key, pn, rn })
     ctx.body = res
   }
-
 }

@@ -1,9 +1,8 @@
 const BaseController = require('./BaseController')
 
 export default class Radio extends BaseController {
-  async index() {
-    const { ctx, service } = this;
-   
+  async index () {
+    const { ctx, service } = this
 
     const res = await service.radio.getRadio()
 

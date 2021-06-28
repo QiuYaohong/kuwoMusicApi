@@ -1,5 +1,5 @@
 {
-  "extends": "eslint-config-egg/typescript",
+  "extends": ["eslint-config-egg/typescript","eslint-config-standard","eslint:recommended"],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
@@ -14,10 +14,29 @@
 				"asyncArrow":"always"
 			}
 		],
-		"no-var-requires":true,
-		"semi": ["error", "always"],
-		"quotes": ["error", "double"]
+		"no-var-requires":0,
+		"no-return-assign":"off",
+		"default-case":"off",
+		"no-useless-constructor":"off"
 	},
+	"overrides":[
+	 {
+		"files":["*.ts"], 
+		"rules":{
+			"@typescript-eslint/no-unused-vars": [
+				"error",
+				{
+					"vars": "all",
+					"args": "after-used",
+					"ignoreRestSiblings": false
+				}
+			],
+			"@typescript-eslint/semi":0,
+			"@typescript-eslint/no-var-requires":0,
+			"@typescript-eslint/no-useless-constructor":0
+		}
+	}
+	],
 	"globals": {
 		"_":"readonly",
 		"app":true

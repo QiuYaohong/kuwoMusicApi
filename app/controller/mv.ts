@@ -1,8 +1,8 @@
 const BaseController = require('./BaseController')
 
 export default class Mv extends BaseController {
-  async getMvUrl() {
-    const { ctx, service } = this;
+  async getMvUrl () {
+    const { ctx, service } = this
 
     const { rid } = ctx.query
 
@@ -11,12 +11,11 @@ export default class Mv extends BaseController {
         code: 500,
         message: '参数错误',
         result: null,
-        success: false
+        success: false,
       }
       return
     }
     const res = await service.mv.getMvUrl(rid)
-
     ctx.body = res
   }
 }

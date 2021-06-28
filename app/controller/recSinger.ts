@@ -6,7 +6,7 @@ export default class RecSinger extends BaseController {
    * @param {pn} 分页
    * @param {rn} 每页数据
    */
-  async index() {
+  async index () {
     const { ctx, service } = this
     const { category = 1, pn = 5, rn = 1 } = ctx.query
     const res = await service.recSinger.index({ category, pn, rn })

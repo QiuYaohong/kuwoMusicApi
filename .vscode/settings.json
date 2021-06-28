@@ -1,5 +1,8 @@
 {
   "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript"
   ],
   "prettier.singleQuote": true,
   "prettier.semi": false,

@@ -1,7 +1,7 @@
 const BaseController = require('./BaseController')
 
 export default class Lrc extends BaseController {
-  async index() {
+  async index () {
     const { ctx, service } = this
     const { musicId } = ctx.query
 
@@ -10,7 +10,7 @@ export default class Lrc extends BaseController {
         code: 500,
         message: '参数错误',
         result: null,
-        success: false
+        success: false,
       }
       return false
     }

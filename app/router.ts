@@ -43,15 +43,15 @@ export default (app: Application) => {
   // 歌单分类
   router.get('/playList/getTagPlayList', controller.playList.getTagPlayList)
   // 关键字搜索
-  router.get('/search/searchKey',controller.search.searchKey)
+  router.get('/search/searchKey', controller.search.searchKey)
   // 单曲搜索
-  router.get('/search/searchMusicBykeyWord',controller.search.searchMusicBykeyWord)
+  router.get('/search/searchMusicBykeyWord', controller.search.searchMusicBykeyWord)
   // 专辑搜索
-  router.get('/search/searchAlbumBykeyWord',controller.search.searchAlbumBykeyWord)
+  router.get('/search/searchAlbumBykeyWord', controller.search.searchAlbumBykeyWord)
   // mv 搜索
-  router.get('/search/searchMvBykeyWord',controller.search.searchMvBykeyWord)
+  router.get('/search/searchMvBykeyWord', controller.search.searchMvBykeyWord)
   // 歌单搜索
-  router.get('/search/searchPlayListBykeyWord',controller.search.searchPlayListBykeyWord)
+  router.get('/search/searchPlayListBykeyWord', controller.search.searchPlayListBykeyWord)
   // 歌手搜索
-  router.get('/search/searchArtistBykeyWord',controller.search.searchArtistBykeyWord)
+  router.get('/search/searchArtistBykeyWord', controller.search.searchArtistBykeyWord)
 }

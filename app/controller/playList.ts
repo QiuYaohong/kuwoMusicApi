@@ -1,8 +1,8 @@
 const BaseController = require('./BaseController')
 
 export default class PlayList extends BaseController {
-  async index() {
-    const { ctx, service } = this;
+  async index () {
+    const { ctx, service } = this
     // 默认 new = 最新 hot = 最热
     const { order = 'new', rn = 30, pn = 1 } = ctx.query
 
@@ -11,15 +11,15 @@ export default class PlayList extends BaseController {
   }
 
   // 歌单分类
-  async getTagPlayList() {
-    const { ctx, service } = this;
+  async getTagPlayList () {
+    const { ctx, service } = this
     const { id, rn = 30, pn = 1 } = ctx.query
     if (!id) {
       ctx.body = {
         code: 500,
         message: '参数错误',
         result: null,
-        success: false
+        success: false,
       }
       return false
     }
