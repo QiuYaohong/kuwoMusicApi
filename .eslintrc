@@ -1,8 +1,9 @@
 {
-  "extends": ["eslint-config-egg/typescript","eslint-config-standard","eslint:recommended"],
+  "extends": ["eslint-config-egg/typescript","eslint-config-standard","eslint:recommended","plugin:jsdoc/recommended"],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
+	"plugins": ["jsdoc"],
 	"rules": {
 		"comma-dangle":["error","always-multiline"],
 		"operator-linebreak":["error","before"],
@@ -17,20 +18,21 @@
 		"no-var-requires":0,
 		"no-return-assign":"off",
 		"default-case":"off",
-		"no-useless-constructor":"off"
+		"no-useless-constructor":"off",
+		"no-unused-vars":"off",
+		"jsdoc/require-param-description":"off",
+		"jsdoc/check-tag-names": 0,
+		"jsdoc/no-undefined-types":0,
+		"jsdoc/valid-types":0,
+		"jsdoc/tag-lines":0,
+		"jsdoc/require-returns":0,
+		"jsdoc/check-param-names":0
 	},
 	"overrides":[
 	 {
 		"files":["*.ts"], 
 		"rules":{
-			"@typescript-eslint/no-unused-vars": [
-				"error",
-				{
-					"vars": "all",
-					"args": "after-used",
-					"ignoreRestSiblings": false
-				}
-			],
+			"@typescript-eslint/no-unused-vars":0,
 			"@typescript-eslint/semi":0,
 			"@typescript-eslint/no-var-requires":0,
 			"@typescript-eslint/no-useless-constructor":0

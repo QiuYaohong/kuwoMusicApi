@@ -2,9 +2,8 @@ const BaseController = require('./BaseController')
 
 export default class Momment extends BaseController {
   /**
-   *  @type     评论类型     [热门评论  get_rec_comment , 最新评论  get_comment]
-   *  @digest             15 歌曲  2  排行榜  8 歌单评论  7  mv评论
-   *
+   *  @param {type}   评论类型     [热门评论  get_rec_comment , 最新评论  get_comment]
+   *  @param {digest}             15 歌曲  2  排行榜  8 歌单评论  7  mv评论
    */
   async index () {
     const { ctx, service } = this

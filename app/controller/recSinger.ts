@@ -1,3 +1,4 @@
+/* eslint-disable jsdoc/check-param-names */
 const BaseController = require('./BaseController')
 
 export default class RecSinger extends BaseController {

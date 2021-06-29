@@ -44,6 +44,7 @@
     "eslint-config-egg": "^8.0.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-html": "^6.1.2",
+    "eslint-plugin-jsdoc": "^35.4.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "tslib": "^1.9.0",
