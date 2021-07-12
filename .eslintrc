@@ -19,7 +19,7 @@
 		"no-return-assign":"off",
 		"default-case":"off",
 		"no-useless-constructor":"off",
-		"no-unused-vars":"off",
+		"no-unused-vars":0,
 		"jsdoc/require-param-description":"off",
 		"jsdoc/check-tag-names": 0,
 		"jsdoc/no-undefined-types":0,

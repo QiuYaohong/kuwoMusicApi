@@ -5,7 +5,8 @@
   "private": true,
   "keywords": [
     "酷我音乐API Node.JS版",
-    "音乐API"
+    "音乐API",
+    "酷我音乐API"
   ],
   "egg": {
     "typescript": true,
