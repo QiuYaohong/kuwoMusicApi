@@ -1,12 +1,24 @@
 {
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript"
-  ],
-  "prettier.singleQuote": true,
-  "prettier.semi": false,
+  "editor.codeActionsOnSave": {
+	  "source.fixAll.stylelint": true,
+    "source.fixAll": true
+	},
+  "eslint.validate": ["javascript", "javascriptreact","typescript","typescriptreact"],
+
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+
   "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules":true,
+    "**/.github":true
+  },
+  "files.watcherExclude": {
     "**/.git": true,
     "**/.svn": true,
     "**/.hg": true,
