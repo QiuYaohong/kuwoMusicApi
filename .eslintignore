@@ -1,2 +1,4 @@
 **/*.d.ts
 node_modules/
+test/
+typings/
