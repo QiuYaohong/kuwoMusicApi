@@ -1,4 +1,5 @@
 import { Service } from 'egg'
+import { v4 as uuidv4 } from 'uuid'
 
 class BaseService extends Service {
   _headers (opts) {
@@ -21,10 +22,12 @@ class BaseService extends Service {
       headers: this._headers(options?.headers),
     }
 
-    return this.ctx.curl(url, opts).then(res => {
+    const reqId = uuidv4()
+    return this.ctx.curl(`${url}&reqId=${reqId}`, opts).then(res => {
       this.logger.info({
         req: Object.assign({}, opts, { ctx: undefined }),
         url,
+        reqId,
         status: res.status,
         res: JSON.stringify(res.data),
       })
@@ -34,6 +37,7 @@ class BaseService extends Service {
         this.logger.info({
           req: Object.assign({}, opts, { ctx: undefined }),
           url,
+          reqId,
           error: e,
           res: null,
         })

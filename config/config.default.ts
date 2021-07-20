@@ -34,9 +34,18 @@ export default (appInfo: EggAppInfo) => {
     domainWhiteList: ['*'],
   }
 
+  // 跨域支持
   config.cors = {
     origin: '*',
     allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS',
+  }
+  // 端口
+  config.cluster = {
+    listen: {
+      path: '',
+      port: 7002,
+      hostname: '127.0.0.1',
+    },
   }
 
   // the return config will combines to EggAppConfig

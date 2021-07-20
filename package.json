@@ -29,7 +29,8 @@
   "dependencies": {
     "egg": "^2.6.1",
     "egg-cors": "^2.2.3",
-    "egg-scripts": "^2.6.0"
+    "egg-scripts": "^2.6.0",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@types/mocha": "^2.2.40",
