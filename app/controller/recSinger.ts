@@ -3,9 +3,9 @@ const BaseController = require('./BaseController')
 
 export default class RecSinger extends BaseController {
   /**
-   * @param {category} //  11 華語  13 歐美  12 日韓 16 組合
-   * @param {pn} 分页
-   * @param {rn} 每页数据
+   * @param {number} category //  11 華語  13 歐美  12 日韓 16 組合
+   * @param {number} pn 分页
+   * @param {number} rn 每页数据
    */
   async index () {
     const { ctx, service } = this

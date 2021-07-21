@@ -5,7 +5,7 @@
 
 #### 播放链接
 
-接口: `/url?rid=162457325`
+接口: `/kuwo/url?rid=162457325`
 
 | 参数  | 说明    | 是否必须 | 示例             |
 | ----- | ------- | -------- | ---------------- |
@@ -15,7 +15,7 @@
 
 #### 歌词
 
-示例: `/lrc?musicId=162457325`
+示例: `/kuwo/lrc?musicId=162457325`
 
 | 参数      | 说明   | 是否必须 | 示例                |
 | --------- | ------ | -------- | ------------------- |
@@ -26,14 +26,14 @@
 
 #### 搜索
 
-接口: `/search/searchMusicBykeyWord?key=等你归来` 
+接口: `/kuwo/search/searchMusicBykeyWord?key=等你归来` 
 
-> 1. `/search/searchKey?key=xxx` 
-> 2. `/search/searchMusicBykeyWord?key=xxx`
-> 3. `/search/searchAlbumBykeyWord?key=xxx`
-> 4. `/search/searchMvBykeyWord?key=xxx`
-> 5. `/search/searchPlayListBykeyWord?key=xxx`
-> 6. `/search/searchArtistBykeyWord?key=xxx`
+> 1. `/kuwo/search/searchKey?key=xxx` 
+> 2. `/kuwo/search/searchMusicBykeyWord?key=xxx`
+> 3. `/kuwo/search/searchAlbumBykeyWord?key=xxx`
+> 4. `/kuwo/search/searchMvBykeyWord?key=xxx`
+> 5. `/kuwo/search/searchPlayListBykeyWord?key=xxx`
+> 6. `/kuwo/search/searchArtistBykeyWord?key=xxx`
 
 参数 : `searchKey` 搜索提示   `searchMusicBykeyWord` 单曲`searchAlbumBykeyWord` 专辑`searchMvBykeyWord` mv `searchPlayListBykeyWord` 歌单  `searchArtistBykeyWord` 歌手
 
@@ -47,7 +47,7 @@
 
 #### 轮播图
 
-接口: `/banner`  
+接口: `/kuwo/banner`  
 
 ```json
 {
@@ -113,7 +113,7 @@
 
 #### 评论
 
-接口: `/comment?sid=80958029&type=get_rec_comment&page=1&rows=30&digest=15`
+接口: `/kuwo/comment?sid=80958029&type=get_rec_comment&page=1&rows=30&digest=15`
 
 | 参数     | 说明                                                | 是否必须 | 示例                   |
 | -------- | --------------------------------------------------- | -------- | ---------------------- |
@@ -125,7 +125,7 @@
 
 #### mv播放地址
 
-接口: `/mv_url?rid=4301188`
+接口: `/kuwo/mv_url?rid=4301188`
 
 | 参数 | 说明  | 是否必须 | 示例        |
 | ---- | ----- | -------- | ----------- |
@@ -135,7 +135,7 @@
 
 #### - 推荐歌单
 
-接口:`/rec_gedan` 
+接口:`/kuwo/rec_gedan` 
 
 | 參數 | 説明     | 是否必須 | 示例  |
 | ---- | -------- | -------- | ----- |
@@ -181,9 +181,9 @@ info: "觉得自己舌头不错的勇士，快来挑战吧！"
 
 #### - 歌单音乐
 
-接口:`/musicList`
+接口:`/kuwo/musicList`
 
-示例:`/musicList?pid=1082685104`
+示例:`/kuwo/musicList?pid=1082685104`
 
 | 参数  | 说明     | 是否必须 | 示例          |
 | ----- | -------- | -------- | ------------- |
@@ -195,9 +195,9 @@ info: "觉得自己舌头不错的勇士，快来挑战吧！"
 
 #### - 默认歌单
 
-接口: `/playList`
+接口: `/kuwo/playList`
 
-示例:`/playList?order=new&rn=30&pn=1` 
+示例:`/kuwo/playList?order=new&rn=30&pn=1` 
 
 | 参数  | 说明               | 是否必须 | 示例     |
 | ----- | ------------------ | -------- | -------- |
@@ -207,7 +207,7 @@ info: "觉得自己舌头不错的勇士，快来挑战吧！"
 
 #### - 歌单分类
 
-示例：`/playList/getTagPlayList?id=2190`
+示例：`/kuwo/playList/getTagPlayList?id=2190`
 
 | 参数 | 说明        | 是否必须 | 示例      |
 | ---- | ----------- | -------- | --------- |
@@ -219,7 +219,7 @@ info: "觉得自己舌头不错的勇士，快来挑战吧！"
 
 #### - 歌单分类Tag
 
-接口:`/getTagList`
+接口:`/kuwo/getTagList`
 
 ```json
 {
@@ -396,8 +396,8 @@ info: "觉得自己舌头不错的勇士，快来挑战吧！"
 
 接口：
 
-+ `/singer?category=0&rn=100&pn=1`
-+ `/singer?category=0&rn=100&pn=1&prefix=A`
++ `/kuwo/singer?category=0&rn=100&pn=1`
++ `/kuwo/singer?category=0&rn=100&pn=1&prefix=A`
 
 參数: 分类： 0 = 全部 1 = 华语男 2 = 华语女 3 = 华语组合 4 = 日韩男 5 = 日韩女 6 = 日韩组合 7 = 欧美男 8 = 欧美女 9 = 欧美组合 10 = 其他
 
@@ -410,7 +410,7 @@ info: "觉得自己舌头不错的勇士，快来挑战吧！"
 
 #### - 歌手单曲
 
-接口:`/singer/music?artistid=5371&rn=30&pn=1`
+接口:`/kuwo/singer/music?artistid=5371&rn=30&pn=1`
 
 | 參數       | 説明     | 是否必須 | 示例            |
 | ---------- | -------- | -------- | --------------- |
@@ -420,7 +420,7 @@ info: "觉得自己舌头不错的勇士，快来挑战吧！"
 
 #### - 歌手專輯
 
-接口:`/singer/album?artistid=5371&rn=30&pn=1`
+接口:`/kuwo/singer/album?artistid=5371&rn=30&pn=1`
 
 | 參數       | 説明     | 是否必須 | 示例            |
 | ---------- | -------- | -------- | --------------- |
@@ -430,7 +430,7 @@ info: "觉得自己舌头不错的勇士，快来挑战吧！"
 
 #### - 歌手mv
 
-接口:`/singer/mv?artistid=5371&rn=30&pn=1`
+接口:`/kuwo/singer/mv?artistid=5371&rn=30&pn=1`
 
 | 參數       | 説明     | 是否必須 | 示例            |
 | ---------- | -------- | -------- | --------------- |
@@ -440,9 +440,9 @@ info: "觉得自己舌头不错的勇士，快来挑战吧！"
 
 #### - 歌手推荐
 
-接口: `/rec_singer`
+接口: `/kuwo/rec_singer`
 
-示例: `/rec_singer?category=11&rn=6&pn=1`
+示例: `/kuwo/rec_singer?category=11&rn=6&pn=1`
 
 `categroy`: 11 华语 13 欧美 12 日韩 16 组合
 
@@ -456,7 +456,7 @@ info: "觉得自己舌头不错的勇士，快来挑战吧！"
 
 ### 音樂信息
 
-接口:`/musicInfo?mid=162457325`
+接口:`/kuwo/musicInfo?mid=162457325`
 
 | 參數 | 説明   | 是否必須 | 示例        |
 | ---- | ------ | -------- | ----------- |
@@ -468,7 +468,7 @@ info: "觉得自己舌头不错的勇士，快来挑战吧！"
 
 #### - 排行榜單
 
-接口：`/rank`
+接口：`/kuwo/rank`
 
 ```json
 {
@@ -525,9 +525,9 @@ info: "觉得自己舌头不错的勇士，快来挑战吧！"
 
 #### - 排行榜音樂
 
-接口:`/rank/musicList`
+接口:`/kuwo/rank/musicList`
 
-示例:	`/rank/musicList?bangId=93&pn=1&rn=30`
+示例:	`/kuwo/rank/musicList?bangId=93&pn=1&rn=30`
 
 | 參數     | 説明     | 是否必須 | 示例        |
 | -------- | -------- | -------- | ----------- |
@@ -537,7 +537,7 @@ info: "觉得自己舌头不错的勇士，快来挑战吧！"
 
 #### - 推荐榜单
 
-接口:`/rank/rec_bangList` 
+接口:`/kuwo/rank/rec_bangList` 
 
 ```json
 {
@@ -555,7 +555,7 @@ info: "觉得自己舌头不错的勇士，快来挑战吧！"
 
 ### 主播电台
 
-接口:`/radio`
+接口:`/kuwo/radio`
 
 ```json
 Tree
