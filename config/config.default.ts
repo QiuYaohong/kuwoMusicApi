@@ -1,4 +1,6 @@
 import { EggAppConfig, EggAppInfo, PowerPartial } from 'egg'
+const path = require('path')
+const fs = require('fs')
 
 export default (appInfo: EggAppInfo) => {
   const config = {} as PowerPartial<EggAppConfig>
@@ -46,6 +48,10 @@ export default (appInfo: EggAppInfo) => {
       port: 7002,
       hostname: '127.0.0.1',
     },
+  }
+
+  config.siteFile = {
+    '/': fs.readFileSync(path.join(appInfo.baseDir, 'app/public/index.html')),
   }
 
   // the return config will combines to EggAppConfig
