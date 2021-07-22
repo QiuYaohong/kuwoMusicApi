@@ -1,8 +1,5 @@
 {
   "extends": ["eslint-config-egg/typescript","eslint-config-standard","eslint:recommended","plugin:jsdoc/recommended"],
-  "parserOptions": {
-    "project": "./tsconfig.json"
-  },
 	"plugins": ["jsdoc"],
 	"rules": {
 		"comma-dangle":["error","always-multiline"],
