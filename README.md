@@ -16,5 +16,5 @@ $ npm run dev
 
 ## 使用文档
 
-[文档地址](https://github.com/QiuYaohong/kuwoMusicApi.git) 
+[文档地址](https://qiuyaohong.github.io/kuwoMusicApi/) 
 
