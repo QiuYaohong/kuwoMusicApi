@@ -18,7 +18,7 @@ $ npm run dev
 
 - 项目启动后 默认本地服务为 http://127.0.0.1:7002
 - 接口完整地址 为 本地服务地址 + 接口地址
-  ![](https://user-images.githubusercontent.com/51219225/140633151-7d955807-5ea0-4f3d-8a08-7f7838e57e81.png)
+  ![](https://user-images.githubusercontent.com/51219225/140633174-8e25f1dd-7581-480c-af3b-99f8144c20e9.png)
 - 例如歌曲播放链接: http://127.0.0.1:7002/kuwo/url?mid=162457325&type=music
 
 [接口文档地址](https://qiuyaohong.github.io/kuwoMusicApi/) 
