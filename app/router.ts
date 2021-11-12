@@ -40,6 +40,8 @@ export default (app: Application) => {
   router.get('/kuwo/getTagList', controller.getTagList.index)
   // 默认歌单
   router.get('/kuwo/playList', controller.playList.index)
+  // 专辑歌单
+  router.get('/kuwo/albumInfo', controller.albumInfo.index)
   // 歌单分类
   router.get('/kuwo/playList/getTagPlayList', controller.playList.getTagPlayList)
   // 关键字搜索

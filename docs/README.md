@@ -198,6 +198,566 @@ info: "觉得自己舌头不错的勇士，快来挑战吧！"
 | `rn`  | 每页条数           |          | 默认 30  |
 | `pn`  | 页数               |          | 默认 1   |
 
+### - 歌手专辑  歌单
+
+接口: `/kuwo/albumInfo`
+
+示例: `/kuwo/albumInfo?albumId=49449&rn=30&pn=1`
+
+| 参数      | 说明     | 是否必须 | 示例            |
+| --------- | -------- | -------- | --------------- |
+| `albumId` | 专辑 id  | 是       | `albumId`=49449 |
+| `rn`      | 每页条数 |          | 默认 30         |
+| `pn`      | 页数     |          | 默认 1          |
+
+```json
+{
+"code": 200,
+"curTime": 1636723164284,
+"data": {
+"playCnt": 126806,
+"artist": "周杰伦",
+"releaseDate": "2010-05-18",
+"album": "跨时代",
+"albumid": 49449,
+"pay": 0,
+"artistid": 336,
+"pic": "https://img2.kuwo.cn/star/albumcover/300/98/24/205164915.jpg",
+"isstar": 0,
+"total": 12,
+"content_type": "0",
+"albuminfo": "跨越自己 创新时代 周杰伦 2010第十辑【跨时代】 跨乐古今．飞越想象．创意绝伦．超时感动 华语乐坛天王周杰伦每次带给大家的全新音乐每每引领话题，而专辑封面更是备受瞩目！第10张个人专辑「跨时代」在5月18日全亚洲同步发行，随着封面的曝光，彷佛预告了一张经典专辑即将诞生！周杰伦穿着中古世纪的服装，化身吸血鬼王子，穿梭时空来到现代，在古堡的天台上，他忧郁凝视远方，只要音乐存在，吸血鬼王子就能跨越时代闻乐苏醒，这也是这张专辑的音乐精神所在，当初创作音乐的初衷与坚持依然不变，就像周杰伦在他第一张同名专辑内页里写的：「希望我现在认为很屌的杰伦专辑，以后听也能一样佩服自己！」事实上周董对自己的音乐依然充满自信，希望音乐可以跨时代继续感动所有人。 封面里周杰伦一身中古世纪的服装令人惊艳！尤其是黑色蕾丝斗篷披风有别于一般人对吸血鬼的印象，造型师表示今年流行的蕾丝大多运用在女生上，但我们大胆的用在杰伦的身上却有很自然又突出的效果！而这次拍摄封面与内页的场景就是在「跨时代」MV的场景里拍摄，片场租了两个大棚搭建了三个场景，光封面拍照的场景动辄就花费300万！为达到视觉上的三维效果，「跨时代」专辑铁盒精装版的封面将制作成3D影像，让歌迷有身历其境的感受！ 「超人不会飞」道出十年心路历程 各方意见让人疲惫，压力大但不能流泪 超人周董还要继续飞 「超人不会飞」 自嘲好人好事代表 需接受众人检视 伟大无奈的杰伦就算压力大 仍坚持硬汉形象 因为「超人不能流眼泪」 天王周杰伦一举一动均引起华语乐坛骚动，2008年发行【魔杰座】专辑，顺利获得金曲奖八项入围肯定，并拿下叁项大奖，成绩裴然。在广大乐迷引颈期盼将近两年后，周杰伦终于要在今年5月推出个人第十张全新音乐大碟， 4月26日早上10点新专辑首波主打歌「超人不会飞」完整首播，第一时间与听友分享周杰伦的最新创作。 主打歌「超人不会飞」 自嘲好人好事代表 需接受众人检视 就算压力大 仍坚持硬汉形象 因为「超人不能流眼泪」 新歌「超人不会飞」，由周杰伦填词谱曲兼制作，以抒情曲风缓缓唱出出道十年心路历程与感慨。歌词中谈到自己带来的社会以及音乐现象，更自嘲自己成为好人好事代表，需接受众人检视，自然散发出独特的周式幽默风格，令人会心一笑，周杰伦表示「一般带有批判意味的歌词都会用重节奏或饶舌曲风包装，但我就是要用抒情曲风带给大家全新感受！」 歌名「超人不会飞」，自嘲没有特异功能的周杰伦，只有梦想与坚持去做音乐！没想到他的歌曲可以变成学校教材，他的一举一动都变成社会榜样，每个人都在帮他计算收视率、票房与奖项，他的形象、表情、言行举止、甚至开的车、住的楼，还是专辑有没有夺冠？电影有没有创下高票房？通通被挖出来仔细检验，如同歌词所说，妈妈说很多事别太计较，只是使命感找到了我，我睡不着。他也不禁大唱，我到底是一个创作歌手，还是好人好事代表。周杰伦表示这样的生活难免觉得累，也需要呼吸空间，但歌词同时也透露「不要问我哭过了没，因为超人不能流眼泪！」依然展现十足铁汉个性。",
+"lang": "普通话",
+"musicList": [
+{
+"musicrid": "MUSIC_728673",
+"barrage": "0",
+"artist": "周杰伦",
+"mvpayinfo": {
+"play": 0,
+"vid": 10307548,
+"down": 0
+},
+"pic": "https://img2.kuwo.cn/star/albumcover/500/98/24/205164915.jpg",
+"isstar": 0,
+"rid": 728673,
+"duration": 194,
+"score100": "57",
+"content_type": "0",
+"track": 1,
+"hasLossless": true,
+"hasmv": 1,
+"releaseDate": "2010-05-18",
+"album": "跨时代",
+"albumid": 49449,
+"pay": "16711935",
+"artistid": 336,
+"albumpic": "https://img2.kuwo.cn/star/albumcover/500/98/24/205164915.jpg",
+"originalsongtype": 1,
+"songTimeMinutes": "03:14",
+"isListenFee": true,
+"pic120": "https://img2.kuwo.cn/star/albumcover/120/98/24/205164915.jpg",
+"name": "跨时代",
+"online": 1,
+"payInfo": {
+"play": "1111",
+"download": "1111",
+"local_encrypt": "1",
+"limitfree": 0,
+"cannotDownload": 0,
+"refrain_start": 48031,
+"listen_fragment": "1",
+"refrain_end": 69528,
+"cannotOnlinePlay": 0,
+"feeType": {
+"song": "1",
+"vip": "1"
+},
+"down": "1111"
+}
+},
+{
+"musicrid": "MUSIC_728675",
+"barrage": "0",
+"artist": "周杰伦",
+"mvpayinfo": {
+"play": 0,
+"vid": 10307415,
+"down": 0
+},
+"pic": "https://img2.kuwo.cn/star/albumcover/500/98/24/205164915.jpg",
+"isstar": 0,
+"rid": 728675,
+"duration": 282,
+"score100": "67",
+"content_type": "0",
+"track": 2,
+"hasLossless": true,
+"hasmv": 1,
+"releaseDate": "2010-05-18",
+"album": "跨时代",
+"albumid": 49449,
+"pay": "16711935",
+"artistid": 336,
+"albumpic": "https://img2.kuwo.cn/star/albumcover/500/98/24/205164915.jpg",
+"originalsongtype": 1,
+"songTimeMinutes": "04:42",
+"isListenFee": true,
+"pic120": "https://img2.kuwo.cn/star/albumcover/120/98/24/205164915.jpg",
+"name": "说了再见",
+"online": 1,
+"payInfo": {
+"play": "1111",
+"download": "1111",
+"local_encrypt": "1",
+"limitfree": 0,
+"cannotDownload": 0,
+"refrain_start": 93238,
+"listen_fragment": "1",
+"refrain_end": 124785,
+"cannotOnlinePlay": 0,
+"feeType": {
+"song": "1",
+"vip": "1"
+},
+"down": "1111"
+}
+},
+{
+"musicrid": "MUSIC_728677",
+"barrage": "0",
+"artist": "周杰伦",
+"mvpayinfo": {
+"play": 0,
+"vid": 10307419,
+"down": 0
+},
+"pic": "https://img2.kuwo.cn/star/albumcover/500/98/24/205164915.jpg",
+"isstar": 0,
+"rid": 728677,
+"duration": 262,
+"score100": "77",
+"content_type": "0",
+"track": 3,
+"hasLossless": true,
+"hasmv": 1,
+"releaseDate": "2010-05-18",
+"album": "跨时代",
+"albumid": 49449,
+"pay": "16711935",
+"artistid": 336,
+"albumpic": "https://img2.kuwo.cn/star/albumcover/500/98/24/205164915.jpg",
+"originalsongtype": 1,
+"songTimeMinutes": "04:22",
+"isListenFee": true,
+"pic120": "https://img2.kuwo.cn/star/albumcover/120/98/24/205164915.jpg",
+"name": "烟花易冷",
+"online": 1,
+"payInfo": {
+"play": "1111",
+"download": "1111",
+"local_encrypt": "1",
+"limitfree": 0,
+"cannotDownload": 0,
+"refrain_start": 61374,
+"listen_fragment": "1",
+"refrain_end": 112162,
+"cannotOnlinePlay": 0,
+"feeType": {
+"song": "1",
+"vip": "1"
+},
+"down": "1111"
+}
+},
+{
+"musicrid": "MUSIC_728674",
+"barrage": "0",
+"artist": "周杰伦",
+"mvpayinfo": {
+"play": 0,
+"vid": 10307549,
+"down": 0
+},
+"nationid": "0",
+"pic": "https://img2.kuwo.cn/star/albumcover/500/98/24/205164915.jpg",
+"isstar": 0,
+"rid": 728674,
+"duration": 238,
+"score100": "50",
+"content_type": "0",
+"track": 4,
+"hasLossless": true,
+"hasmv": 1,
+"releaseDate": "2010-05-18",
+"album": "跨时代",
+"albumid": 49449,
+"pay": "16711935",
+"artistid": 336,
+"albumpic": "https://img2.kuwo.cn/star/albumcover/500/98/24/205164915.jpg",
+"originalsongtype": 1,
+"songTimeMinutes": "03:58",
+"isListenFee": true,
+"pic120": "https://img2.kuwo.cn/star/albumcover/120/98/24/205164915.jpg",
+"name": "免费教学录影带",
+"online": 1,
+"payInfo": {
+"play": "1111",
+"download": "1111",
+"local_encrypt": "1",
+"limitfree": 0,
+"cannotDownload": 0,
+"refrain_start": 61695,
+"listen_fragment": "1",
+"refrain_end": 83273,
+"cannotOnlinePlay": 0,
+"feeType": {
+"song": "1",
+"vip": "1"
+},
+"down": "1111"
+}
+},
+{
+"musicrid": "MUSIC_728669",
+"barrage": "0",
+"artist": "周杰伦",
+"mvpayinfo": {
+"play": 0,
+"vid": 10307545,
+"down": 0
+},
+"pic": "https://img2.kuwo.cn/star/albumcover/500/98/24/205164915.jpg",
+"isstar": 0,
+"rid": 728669,
+"duration": 252,
+"score100": "59",
+"content_type": "0",
+"track": 5,
+"hasLossless": true,
+"hasmv": 1,
+"releaseDate": "2010-05-18",
+"album": "跨时代",
+"albumid": 49449,
+"pay": "16711935",
+"artistid": 336,
+"albumpic": "https://img2.kuwo.cn/star/albumcover/500/98/24/205164915.jpg",
+"originalsongtype": 1,
+"songTimeMinutes": "04:12",
+"isListenFee": true,
+"pic120": "https://img2.kuwo.cn/star/albumcover/120/98/24/205164915.jpg",
+"name": "好久不见",
+"online": 1,
+"payInfo": {
+"play": "1111",
+"download": "1111",
+"local_encrypt": "1",
+"limitfree": 0,
+"cannotDownload": 0,
+"refrain_start": 89054,
+"listen_fragment": "1",
+"refrain_end": 129689,
+"cannotOnlinePlay": 0,
+"feeType": {
+"song": "1",
+"vip": "1"
+},
+"down": "1111"
+}
+},
+{
+"musicrid": "MUSIC_726836",
+"barrage": "0",
+"artist": "周杰伦",
+"mvpayinfo": {
+"play": 0,
+"vid": 10307544,
+"down": 0
+},
+"pic": "https://img2.kuwo.cn/star/albumcover/500/98/24/205164915.jpg",
+"isstar": 0,
+"rid": 726836,
+"duration": 256,
+"score100": "65",
+"content_type": "0",
+"track": 6,
+"hasLossless": true,
+"hasmv": 1,
+"releaseDate": "2010-05-18",
+"album": "跨时代",
+"albumid": 49449,
+"pay": "16711935",
+"artistid": 336,
+"albumpic": "https://img2.kuwo.cn/star/albumcover/500/98/24/205164915.jpg",
+"originalsongtype": 1,
+"songTimeMinutes": "04:16",
+"isListenFee": true,
+"pic120": "https://img2.kuwo.cn/star/albumcover/120/98/24/205164915.jpg",
+"name": "雨下一整晚",
+"online": 1,
+"payInfo": {
+"play": "1111",
+"download": "1111",
+"local_encrypt": "1",
+"limitfree": 0,
+"cannotDownload": 0,
+"refrain_start": 59084,
+"listen_fragment": "1",
+"refrain_end": 105386,
+"cannotOnlinePlay": 0,
+"feeType": {
+"song": "1",
+"vip": "1"
+},
+"down": "1111"
+}
+},
+{
+"musicrid": "MUSIC_735136",
+"barrage": "0",
+"artist": "周杰伦",
+"mvpayinfo": {
+"play": 0,
+"vid": 10307550,
+"down": 0
+},
+"pic": "https://img2.kuwo.cn/star/albumcover/500/98/24/205164915.jpg",
+"isstar": 0,
+"rid": 735136,
+"duration": 170,
+"score100": "50",
+"content_type": "0",
+"track": 7,
+"hasLossless": true,
+"hasmv": 1,
+"releaseDate": "2010-05-18",
+"album": "跨时代",
+"albumid": 49449,
+"pay": "16711935",
+"artistid": 336,
+"albumpic": "https://img2.kuwo.cn/star/albumcover/500/98/24/205164915.jpg",
+"originalsongtype": 1,
+"songTimeMinutes": "02:50",
+"isListenFee": true,
+"pic120": "https://img2.kuwo.cn/star/albumcover/120/98/24/205164915.jpg",
+"name": "嘻哈空姐",
+"online": 1,
+"payInfo": {
+"play": "1111",
+"download": "1111",
+"local_encrypt": "1",
+"limitfree": 0,
+"cannotDownload": 0,
+"refrain_start": 56367,
+"listen_fragment": "1",
+"refrain_end": 73699,
+"cannotOnlinePlay": 0,
+"feeType": {
+"song": "1",
+"vip": "1"
+},
+"down": "1111"
+}
+},
+{
+"musicrid": "MUSIC_728676",
+"barrage": "0",
+"artist": "周杰伦",
+"mvpayinfo": {
+"play": 0,
+"vid": 286155,
+"down": 0
+},
+"pic": "https://img2.kuwo.cn/star/albumcover/500/98/24/205164915.jpg",
+"isstar": 0,
+"rid": 728676,
+"duration": 258,
+"score100": "69",
+"content_type": "0",
+"track": 8,
+"hasLossless": true,
+"hasmv": 1,
+"releaseDate": "2010-05-18",
+"album": "跨时代",
+"albumid": 49449,
+"pay": "16711935",
+"artistid": 336,
+"albumpic": "https://img2.kuwo.cn/star/albumcover/500/98/24/205164915.jpg",
+"originalsongtype": 1,
+"songTimeMinutes": "04:18",
+"isListenFee": true,
+"pic120": "https://img2.kuwo.cn/star/albumcover/120/98/24/205164915.jpg",
+"name": "我落泪情绪零碎",
+"online": 1,
+"payInfo": {
+"play": "1111",
+"download": "1111",
+"local_encrypt": "1",
+"limitfree": 0,
+"cannotDownload": 0,
+"refrain_start": 72065,
+"listen_fragment": "1",
+"refrain_end": 134852,
+"cannotOnlinePlay": 0,
+"feeType": {
+"song": "1",
+"vip": "1"
+},
+"down": "1111"
+}
+},
+{
+"musicrid": "MUSIC_728668",
+"barrage": "0",
+"artist": "周杰伦&杨瑞代",
+"mvpayinfo": {
+"play": 0,
+"vid": 7975651,
+"down": 0
+},
+"pic": "https://img2.kuwo.cn/star/albumcover/500/98/24/205164915.jpg",
+"isstar": 0,
+"rid": 728668,
+"duration": 254,
+"score100": "70",
+"content_type": "0",
+"track": 9,
+"hasLossless": true,
+"hasmv": 1,
+"releaseDate": "2010-05-18",
+"album": "跨时代",
+"albumid": 49449,
+"pay": "16711935",
+"artistid": 336,
+"albumpic": "https://img2.kuwo.cn/star/albumcover/500/98/24/205164915.jpg",
+"originalsongtype": 1,
+"songTimeMinutes": "04:14",
+"isListenFee": true,
+"pic120": "https://img2.kuwo.cn/star/albumcover/120/98/24/205164915.jpg",
+"name": "爱的飞行日记",
+"online": 1,
+"payInfo": {
+"play": "1111",
+"download": "1111",
+"local_encrypt": "1",
+"limitfree": 0,
+"cannotDownload": 0,
+"refrain_start": 85425,
+"listen_fragment": "1",
+"refrain_end": 120859,
+"cannotOnlinePlay": 0,
+"feeType": {
+"song": "1",
+"vip": "1"
+},
+"down": "1111"
+}
+},
+{
+"musicrid": "MUSIC_728671",
+"barrage": "0",
+"artist": "周杰伦",
+"mvpayinfo": {
+"play": 0,
+"vid": 10307546,
+"down": 0
+},
+"pic": "https://img2.kuwo.cn/star/albumcover/500/98/24/205164915.jpg",
+"isstar": 0,
+"rid": 728671,
+"duration": 255,
+"score100": "55",
+"content_type": "0",
+"track": 10,
+"hasLossless": true,
+"hasmv": 1,
+"releaseDate": "2010-05-18",
+"album": "跨时代",
+"albumid": 49449,
+"pay": "16711935",
+"artistid": 336,
+"albumpic": "https://img2.kuwo.cn/star/albumcover/500/98/24/205164915.jpg",
+"originalsongtype": 1,
+"songTimeMinutes": "04:15",
+"isListenFee": true,
+"pic120": "https://img2.kuwo.cn/star/albumcover/120/98/24/205164915.jpg",
+"name": "自导自演",
+"online": 1,
+"payInfo": {
+"play": "1111",
+"download": "1111",
+"local_encrypt": "1",
+"limitfree": 0,
+"cannotDownload": 0,
+"refrain_start": 69953,
+"listen_fragment": "1",
+"refrain_end": 99535,
+"cannotOnlinePlay": 0,
+"feeType": {
+"song": "1",
+"vip": "1"
+},
+"down": "1111"
+}
+},
+{
+"musicrid": "MUSIC_728672",
+"barrage": "0",
+"artist": "周杰伦",
+"mvpayinfo": {
+"play": 0,
+"vid": 10307547,
+"down": 0
+},
+"pic": "https://img2.kuwo.cn/star/albumcover/500/98/24/205164915.jpg",
+"isstar": 0,
+"rid": 728672,
+"duration": 299,
+"score100": "62",
+"content_type": "0",
+"track": 11,
+"hasLossless": true,
+"hasmv": 1,
+"releaseDate": "2010-05-18",
+"album": "跨时代",
+"albumid": 49449,
+"pay": "16711935",
+"artistid": 336,
+"albumpic": "https://img2.kuwo.cn/star/albumcover/500/98/24/205164915.jpg",
+"originalsongtype": 1,
+"songTimeMinutes": "04:59",
+"isListenFee": true,
+"pic120": "https://img2.kuwo.cn/star/albumcover/120/98/24/205164915.jpg",
+"name": "超人不会飞",
+"online": 1,
+"payInfo": {
+"play": "1111",
+"download": "1111",
+"local_encrypt": "1",
+"limitfree": 0,
+"cannotDownload": 0,
+"refrain_start": 99677,
+"listen_fragment": "1",
+"refrain_end": 146960,
+"cannotOnlinePlay": 0,
+"feeType": {
+"song": "1",
+"vip": "1"
+},
+"down": "1111"
+}
+}
+]
+},
+"msg": "success",
+"profileId": "site",
+"reqId": "f89856d21f50d0b0047c1ae01fb7e86c",
+"tId": ""
+}
+```
+
+
+
 #### - 歌单分类
 
 示例：`/kuwo/playList/getTagPlayList?id=2190`
