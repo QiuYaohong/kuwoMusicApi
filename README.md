@@ -23,3 +23,16 @@ $ npm run dev
 
 [接口文档地址](https://qiuyaohong.github.io/kuwoMusicApi/) 
 
+
+
+## 部署
+
+```shell
+
+  npm run ci  # 将ts转化为js, 在服务器里面运行之前，需要将ts都转换为js，这样才能正常运行
+
+  npm run start # 启动服务
+
+  npm run stop  # 停止服务
+
+```

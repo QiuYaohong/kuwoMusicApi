@@ -12,6 +12,7 @@
 				"asyncArrow":"always"
 			}
 		],
+		"linebreak-style":0,
 		"no-var-requires":0,
 		"no-return-assign":"off",
 		"default-case":"off",
