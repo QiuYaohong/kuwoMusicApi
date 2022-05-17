@@ -21,29 +21,45 @@ class BaseService extends Service {
       ...options,
       headers: this._headers(options?.headers),
     }
-
-    const reqId = uuidv4()
-    return this.ctx.curl(`${url}&reqId=${reqId}`, opts).then(res => {
-      this.logger.info({
-        req: Object.assign({}, opts, { ctx: undefined }),
-        url,
-        reqId,
-        status: res.status,
-        res: JSON.stringify(res.data),
-      })
-      return res.data
-    })
-      .catch(e => {
-        this.logger.info({
-          req: Object.assign({}, opts, { ctx: undefined }),
-          url,
-          reqId,
-          error: e,
-          res: null,
-        })
-        throw e
-      })
+    // eslint-disable-next-line @typescript-eslint/no-this-alias
+    const _this = this
+    return handleGetData(_this, url, opts)
   }
 }
 
 module.exports = BaseService
+
+/**
+ * @param _this
+ * @param url
+ * @param opts
+ */
+export function handleGetData (_this, url, opts) {
+  let timeoutCount = 0
+  const reqId = uuidv4()
+  return _this.ctx.curl(`${url}&reqId=${reqId}`, opts).then(res => {
+    _this.logger.info({
+      req: Object.assign({}, opts, { ctx: undefined }),
+      url,
+      reqId,
+      status: res.status,
+      res: JSON.stringify(res.data),
+    })
+    return res.data
+  }).catch(e => {
+    _this.logger.info({
+      req: Object.assign({}, opts, { ctx: undefined }),
+      url,
+      reqId,
+      error: e,
+      res: null,
+    })
+    // 失败自动重试
+    if (timeoutCount <= 3) {
+      timeoutCount++
+      return handleGetData(_this, url, opts)
+    }
+    timeoutCount = 0
+    throw e
+  })
+}
