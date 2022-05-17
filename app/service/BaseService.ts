@@ -13,6 +13,8 @@ class BaseService extends Service {
     }
   }
 
+  timeoutCount = 0
+
   async commonRequest (url, options) {
     const opts = {
       method: 'GET',
@@ -28,14 +30,12 @@ class BaseService extends Service {
 }
 
 module.exports = BaseService
-
 /**
  * @param _this
  * @param url
  * @param opts
  */
 export function handleGetData (_this, url, opts) {
-  let timeoutCount = 0
   const reqId = uuidv4()
   return _this.ctx.curl(`${url}&reqId=${reqId}`, opts).then(res => {
     _this.logger.info({
@@ -45,6 +45,8 @@ export function handleGetData (_this, url, opts) {
       status: res.status,
       res: JSON.stringify(res.data),
     })
+    _this.timeoutCount = 0
+
     return res.data
   }).catch(e => {
     _this.logger.info({
@@ -55,11 +57,13 @@ export function handleGetData (_this, url, opts) {
       res: null,
     })
     // 失败自动重试
-    if (timeoutCount <= 3) {
-      timeoutCount++
+    if (_this.timeoutCount <= 2) {
+      _this.timeoutCount++
       return handleGetData(_this, url, opts)
     }
-    timeoutCount = 0
+
+    _this.timeoutCount = 0
+
     throw e
   })
 }
