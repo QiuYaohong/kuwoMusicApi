@@ -3,14 +3,15 @@
 
 ## 接口文档
 
-#### 播放链接( `music`| `mv`) 统一接口
+#### 播放链接( `convert_url3`| `mv`) 统一接口
 
-接口: `/kuwo/url?mid=162457325&type=music` |  `/kuwo/url?mid=162457325&type=mv`
+接口: `/kuwo/url?mid=162457325&type=convert_url3&br=128kmp3` |  `/kuwo/url?mid=162457325&type=mv`
 
 | 参数  | 说明    | 是否必须 | 示例             |
 | ----- | ------- | -------- | ---------------- |
 | `mid` | 歌曲 id | 是       | `mid` =162457325 |
-| `type` | 播放类型 | 默认 music      | `type`= music / mv |
+| `type` | 播放类型 | 默认 music      | `type`= convert_url3 / mv |
+| `br` | 播放音质：可选 128kmp3、192kmp3、320kmp3 | 默认 128kmp3     | `br`= 128kmp3 |
 
 
 

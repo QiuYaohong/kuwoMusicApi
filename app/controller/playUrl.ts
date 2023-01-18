@@ -3,7 +3,7 @@ const BaseController = require('./BaseController')
 export default class PlayUrl extends BaseController {
   async index () {
     const { ctx, service } = this
-    const { mid, type } = ctx.query
+    const { mid, type, br } = ctx.query
 
     if (!mid) {
       ctx.body = {
@@ -15,7 +15,7 @@ export default class PlayUrl extends BaseController {
       return false
     }
 
-    const res = await service.playUrl.getPlayUrl(mid, type)
+    const res = await service.playUrl.getPlayUrl(mid, type, br)
 
     ctx.body = res
   }
