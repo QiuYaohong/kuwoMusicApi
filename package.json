@@ -32,6 +32,7 @@
     "egg": "^2.6.1",
     "egg-cors": "^2.2.3",
     "egg-scripts": "^2.6.0",
+    "fs-extra": "^11.1.1",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
