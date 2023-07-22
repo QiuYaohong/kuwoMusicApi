@@ -1,7 +1,9 @@
 # 酷我音樂API
+
 ### Development
 
 ## 安装
+
 ```bash
 $ git clone https://github.com/QiuYaohong/kuwoMusicApi.git
 $ npm i
@@ -13,7 +15,6 @@ $ npm run dev
 - Node.js 8.x
 - Typescript 2.8+
 
-
 ## 使用文档
 
 - 项目启动后 默认本地服务为 http://127.0.0.1:7002
@@ -23,16 +24,13 @@ $ npm run dev
 
 [接口文档地址](https://qiuyaohong.github.io/kuwoMusicApi/) 
 
-
-
 ## 部署
 
 ```shell
+  1. npm run ci  # 将ts转化为js, 在服务器里面运行之前, 需要将ts都转换为js, 这样才能正常运行
+     Tips: npm run ci 如果存在异常, 可以直接 npm run tsc 转换成 js, 然后依次执行下一步操作
 
-  npm run ci  # 将ts转化为js, 在服务器里面运行之前，需要将ts都转换为js，这样才能正常运行
+  2. npm run start # 启动服务
 
-  npm run start # 启动服务
-
-  npm run stop  # 停止服务
-
+  3. npm run stop  # 停止服务
 ```
