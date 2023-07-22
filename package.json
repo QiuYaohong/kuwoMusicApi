@@ -33,7 +33,11 @@
     "egg-cors": "^2.2.3",
     "egg-scripts": "^2.6.0",
     "fs-extra": "^11.1.1",
-    "uuid": "^8.3.2"
+    "iconv-lite": "^0.6.3",
+    "needle": "^3.2.0",
+    "process": "^0.11.10",
+    "uuid": "^8.3.2",
+    "zlib": "^1.0.5"
   },
   "devDependencies": {
     "@types/mocha": "^2.2.40",
