@@ -27,10 +27,11 @@ $ npm run dev
 ## 部署
 
 ```shell
-  1. npm run ci  # 将ts转化为js, 在服务器里面运行之前, 需要将ts都转换为js, 这样才能正常运行
-     Tips: npm run ci 如果存在异常, 可以直接 npm run tsc 转换成 js, 然后依次执行下一步操作
 
-  2. npm run start # 启动服务
+  1. npm run start # 启动服务、可用于部署服务端
 
-  3. npm run stop  # 停止服务
+  2. npm run stop  # 停止服务
+
+  3. npm run dev # 本地运行服务
+  
 ```
