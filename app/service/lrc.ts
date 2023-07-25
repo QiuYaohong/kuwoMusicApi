@@ -1,3 +1,4 @@
+/* eslint-disable node/prefer-global/process */
 const BaseService = require('./BaseService')
 const needle = require('needle')
 const process = require('process')

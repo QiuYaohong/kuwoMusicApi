@@ -21,6 +21,7 @@
     "inlineSourceMap": true,
     "importHelpers": true
   },
+  "extends": "@eggjs/tsconfig",
   "exclude": [
     "app/public",
     "app/views",

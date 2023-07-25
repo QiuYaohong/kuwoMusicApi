@@ -1,3 +1,4 @@
+/* eslint-disable jsdoc/require-param-type */
 import { Service } from 'egg'
 import { v4 as uuidv4 } from 'uuid'
 

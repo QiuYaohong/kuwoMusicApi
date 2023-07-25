@@ -13,10 +13,10 @@
     "declarations": true
   },
   "scripts": {
-    "start": "egg-scripts start --port=7002 --daemon --title=egg-server-kuwoMusicApi",
+    "start": "npm run ci && egg-scripts start --port=7002 --daemon --title=egg-server-kuwoMusicApi",
     "stop": "egg-scripts stop --title=egg-server-kuwoMusicApi",
     "docs": "docsify serve ./docs",
-    "dev": "egg-bin dev --port 7002",
+    "dev": "npm run clean && egg-bin dev --port 7002",
     "debug": "egg-bin debug",
     "test-local": "egg-bin test",
     "test": "npm run lint -- --fix && npm run test-local",
@@ -39,6 +39,7 @@
     "zlib": "^1.0.5"
   },
   "devDependencies": {
+    "@eggjs/tsconfig": "^1.3.3",
     "@types/mocha": "^10.0.1",
     "@types/node": "^20.4.4",
     "@types/supertest": "^2.0.12",
