@@ -28,10 +28,10 @@ $ npm run dev
 
 ```shell
 
-  1. npm run start # 启动服务、可用于部署服务端
+  1. npm run start # 启动服务、可用于部署服务器
 
   2. npm run stop  # 停止服务
 
   3. npm run dev # 本地运行服务
-  
+
 ```
